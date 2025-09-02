@@ -1,0 +1,344 @@
+{
+  "header": {
+    "home": "Početna",
+    "services": "Usluge",
+    "ourProjects": "Naši Projekti",
+    "aboutUs": "O Nama",
+    "contact": "Kontakt",
+    "blog": "Blog",
+    "contactUs": "Kontakt",
+    "offers": "Ponude"
+  },
+  "home": {
+    "hero": {
+      "ourServiceIncludes": "Naše Usluge uključuju",
+      "learnMore": "Saznaj više",
+      "description": "Specijalizirani smo za izradu modernih web stranica, razvoj prilagođenih softverskih rješenja i prepoznatljiv grafički dizajn. Također implementiramo sustave kontrole pristupa za poslovne prostore i objekte. Sve usluge pružamo pod jednim krovom – za bržu i učinkovitiju realizaciju vaših ideja.",
+      "title": "Web Dizajn, Razvoj Softvera, Grafički Dizajn & Kontrola Pristupa.",
+      "ourOffers": "Naše Ponude",
+      "getInTouch": "Kontaktirajte Nas",
+      "exploreOffers": "Istraži ponude",
+      "exploreServices": "Istraži usluge"
+    },
+    "projects": {
+      "title": "Pogledajte naše posljednje projekte.",
+      "description": "Pogledajte naše projekte i saznajte više o našim uslugama. Istražite kako pristupamo projektima te s kojim tehnologijama rješavamo probleme naših klijenata.",
+      "learnMore": "Istraži više"
+    },
+    "webshop": {
+      "title": "Kompletan razvoj webshopa",
+      "description": "Razvoj webshopa za vašu tvrtku ili projekt. Webshop će biti prilagođen vašim potrebama te će odražavati identitet i vrijednosti vašeg brenda.",
+      "mobileApp": {
+        "title": "Razvoj mobilne aplikacije za trgovinu",
+        "description": "Razvijamo modernu mobilnu aplikaciju za vaš webshop, prilagođenu za iOS i Android, s jednostavnim sučeljem i brzom kupnjom."
+      },
+      "website": {
+        "title": "Izrada webshop web stranice",
+        "description": "Izrađujemo profesionalnu, responzivnu webshop stranicu s brzim učitavanjem, sigurnom kupnjom i potpunom prilagodbom vašem brendu."
+      },
+      "trackingApp": {
+        "title": "Razvoj aplikacije za praćenje narudžbi",
+        "description": "Omogućite korisnicima praćenje narudžbi u stvarnom vremenu putem intuitivne aplikacije sa statusom, lokacijom i predviđenim vremenom dostave."
+      }
+    },
+    "offers": {
+      "title": "Naše ponude"
+    },
+    "technologies": {
+      "title": "Tehnologije koje koristimo",
+      "description": "Kontinuirano pratimo najnovije tehnologije i trendove kako bismo osigurali da naši klijenti dobiju najbolje moguće rješenje."
+    },
+    "blog": {
+      "title": "Pročitajte nešto zanimljivo.",
+      "description": "Pogledajte naše najnovije blog objave i naučite nešto novo što biste mogli primjeniti u Vašem poslovanju.",
+      "ctaText": "Pogledajte više",
+      "cardCtaText": "Pogledaj više"
+    },
+    "cta": {
+      "title": "Trebate rješenje za vaš projekt?\nKontaktirajte nas odmah!",
+      "description": "Naš inovativni pristup omogućuje vašoj organizaciji da osvoji izazove, optimizira prihode i pokrene nenadmašan uspjeh u neprestano mijenjajućem poslovnom okruženju.",
+      "buttonText": "Kontaktirajte nas"
+    },
+    "faq": {
+      "faq1": {
+        "question": "Koliko traje izrada web stranice?",
+        "answer": "Vrijeme izrade ovisi o kompleksnosti projekta. Jednostavne stranice (do 5 podstranica) obično budu gotove u roku od 7–14 dana, dok naprednije stranice, korisničkim računima ili integracijama mogu potrajati 3–6 tjedana."
+      },
+      "faq2": {
+        "question": "Što sve uključuje grafički dizajn?",
+        "answer": "Nudimo dizajn logotipa, vizualnog identiteta (boje, tipografija), promotivnih materijala (plakati, letci), dizajn za društvene mreže, dizajn ambalaže te pripremu za tisak. Možemo uključiti i mockupe i primjere primjene dizajna u stvarnim situacijama."
+      },
+      "faq3": {
+        "question": "Razvijate li i web aplikacije, ne samo stranice?",
+        "answer": "Da, specijalizirani smo i za custom web aplikacije koje uključuju korisničke račune, upravljanje podacima, rezervacijske sustave, CRM rješenja i drugo. Koristimo moderne tehnologije poput Next.js, NestJS, PostgreSQL, SQLite, Prisma, React, i druge."
+      },
+      "faq4": {
+        "question": "Možete li mi pomoći s održavanjem stranice?",
+        "answer": "Da, nudimo pakete održavanja koji uključuju sigurnosne nadogradnje, backup, dodavanje sadržaja i tehničku podršku. "
+      },
+      "faq5": {
+        "question": "Koje sustave za kontrolu pristupa nudite?",
+        "answer": "Radimo s pouzdanim rješenjima poput Sebury uređaja (tipkovnice, čitači kartica, RFID/NFC sustavi, Mobilna aplikacija) te ih integriramo u vašu postojeću infrastrukturu."
+      },
+      "faq6": {
+        "question": "Kako izgleda proces suradnje s nama?",
+        "answer": "Proces obično ide ovako:\n1. Uvodni sastanak bilo da je to online (MS Teams, Google Meet, ...) ili osobno – definiramo vaše ciljeve i potrebe\n2. Ponuda i dogovor – izrađujemo ponudu i plan\n3. Izrada – dizajn, razvoj i testiranje\n4. Isporuka i podrška – završna revizija i podrška nakon isporuke"
+      }
+    }
+  },
+  "footer": {
+    "ctaTitle": "Trebate rješenje za vaš projekt? Kontaktirajte nas odmah!",
+    "ctaButtonPrimary": "Krenimo odmah",
+    "ctaButtonSecondary": "Naše ponude",
+    "ctaDescription": "*Odgovoriti ćemo u najkraćem mogućem roku kako bismo vam pomogli.",
+    "newsletterTitle": "Ekskluzivne novosti, savjeti i ponude. Newsletter stiže u inbox.",
+    "newsletterDescription": "Prijavite se i budite među prvima koji saznaju za nove usluge, korisne savjete i posebne ponude.",
+    "privacyItem1": "Postavke kolačića",
+    "privacyItem2": "Politika privatnosti",
+    "privacyItem3": "Pravila korištenja",
+    "sectionOffers": "Ponude",
+    "sectionProjects": "Projekti",
+    "sectionPages": "Stranice",
+    "sectionContactInfo": "Kontakt informacije",
+    "services": "Usluge",
+    "offers": "Ponude",
+    "projects": "Projekti",
+    "aboutUs": "O nama",
+    "contact": "Kontakt",
+    "home": "Početna",
+    "blog": "Blog",
+    "newsletterErrorMessage": "Došlo je do greške prilikom slanja vašeg zahtjeva. Molimo pokušajte ponovno kasnije.",
+    "newsletterSuccessMessage": "Hvala vam na prijavi! Provjerite svoj inbox kako biste potvrdili pretplatu."
+  },
+  "ServicePage": {
+    "serviceOffering": "Ponuda Usluge",
+    "whatsIncluded": "Što je Uključeno?",
+    "readyToStart": "Spremni za početak s {serviceName}?",
+    "contactUsPrompt": "Razgovarajmo o tome kako vam možemo pomoći u postizanju vaših ciljeva.",
+    "getInTouch": "Kontaktirajte Nas"
+  },
+  "projectsPage": {
+    "title": "Projekti koje smo realizirali kroz godine.",
+    "description": "Imamo širok spektar projekata koje smo realizirali. Spremni smo ih podijeliti s vama. Projekti su odličan način da prikažemo našu radnju i naše vještine.",
+    "buttons": []
+  },
+  "aboutUsPage": {
+    "title": "Mi smo tim za vaš uspjeh.",
+    "description": "Preko godina, mi smo izgradili reputaciju za pružanje visokokvalitetnih usluga našim klijentima.",
+    "ourApproach": {
+      "title": "Naš način rada",
+      "description": "Primjenjujemo sustavni pristup u razvoju digitalnih rješenja, fokusirajući se na optimizaciju poslovnih procesa i strategijsko pozicioniranje na tržištu kroz suvremene tehnologije."
+    },
+    "ourTeam": {
+      "title": "Tko stoji iza svega",
+      "description": "Naš stručni tim čine iskusni profesionalci specijalizirani za digitalne tehnologije, koji kontinuirano prate najnovije trendove u industriji i primjenjuju najbolje prakse u realizaciji projekata."
+    },
+    "ourValues": {
+      "title": "Vrijednosti koje nas vode",
+      "description": "Usmjereni smo na postizanje izvrsnosti kroz integriran pristup, profesionalnu suradnju i implementaciju inovativnih rješenja koja omogućavaju dugoročni rast i konkurentnost naših klijenata."
+    },
+    "buttons": []
+  },
+  "servicesPage": {
+    "title": "Naše Usluge",
+    "description": "Pružamo sveobuhvatan spektar digitalnih usluga prilagođenih potrebama vašeg poslovanja. Od web dizajna do razvoja softvera, imamo stručnost za oživljavanje vaše vizije.",
+    "learnMore": "Saznaj više"
+  },
+  "contactPage": {
+    "title": "Kontaktirajte nas",
+    "description": "Imate ideju, projekt ili pitanje? Javite nam se i zajedno ćemo pronaći najbolje rješenje za vaše potrebe.",
+    "formTitle": "Javite nam se putem formulara, emaila ili telefona.",
+    "formDescription": "Kontaktirat ćemo vas uskoro.",
+    "addressLabel": "Adresa:",
+    "phoneLabel": "Telefon:",
+    "emailLabel": "Email:",
+    "contactPersonLabel": "Osoba za kontakt:"
+  },
+  "offersPage": {
+    "title": "Izaberite ponudu",
+    "description": "Pružamo širok spektar usluga. Istražite detaljnije svaku ponudu klikom na nju.",
+    "noOffersText": "Nema ponuda za odabrane usluge.",
+    "viewOfferButton": "Pogledaj ponudu",
+    "contactUsButton": "Kontaktirajte nas",
+
+    "buttons": []
+  },
+  "blogPage": {
+    "title": "Pogledajte naš blog.",
+    "description": "Pogledajte naš blog kako biste se educirali o našim uslugama.",
+    "buttons": []
+  },
+  "contactForm": {
+    "firstName": "Ime",
+    "firstNamePlaceholder": "Unesite vaše ime",
+    "lastName": "Prezime",
+    "lastNamePlaceholder": "Unesite vaše prezime",
+    "email": "Email",
+    "emailPlaceholder": "Unesite vašu email adresu",
+    "phone": "Broj telefona",
+    "phonePlaceholder": "Unesite vaš broj telefona",
+    "service": "Usluga",
+    "projectDescription": "Opis projekta",
+    "projectDescriptionPlaceholder": "Opišite vaš projekt ili potrebe",
+    "privacyPolicy": "Slažem se s politikom privatnosti . Detaljnije o našoj politici Istraži na linku. Uvijek možete kontaktirati našu podršku.",
+    "submitButton": "Pošalji",
+    "languagePreference": "Jezik za komunikaciju",
+    "languagePreferencePlaceholder": "Odaberite jezik",
+    "croatian": "Hrvatski",
+    "english": "Engleski",
+    "otherService": "Nešto drugo",
+    "validation": {
+      "firstNameMin": "Ime mora imati barem 2 znaka.",
+      "lastNameMin": "Prezime mora imati barem 2 znaka.",
+      "emailInvalid": "Unesite ispravnu email adresu.",
+      "phoneMin": "Unesite ispravan broj telefona.",
+      "serviceRequired": "Molimo odaberite uslugu.",
+      "projectDescriptionMin": "Opis projekta mora imati barem 10 znakova.",
+      "privacyPolicyRequired": "Molimo prihvatite politiku privatnosti da biste nastavili."
+    },
+    "alerts": {
+      "success": "Uspješno ste poslali upit! Kontaktirat ćemo vas uskoro.",
+      "error": "Došlo je do greške prilikom slanja upita. Molimo pokušajte ponovno."
+    },
+    "submitting": "Šalje se...",
+    "submit": "Pošalji"
+  },
+  "cookies": {
+    "title": "Upravljaj Kolačićima",
+    "description": "Koristimo kolačiće kako bismo vam osigurali najbolje iskustvo na našoj web stranici. Nastavkom korištenja naše stranice pristajete na našu upotrebu kolačića.",
+    "settingsTitle": "Postavke kolačića",
+    "settingsDescription": "Ova web stranica koristi kolačiće kako bi poboljšala vaše iskustvo tijekom navigacije kroz web stranicu. Od tih kolačića, kolačići koji su kategorizirani kao neophodni pohranjuju se u vašem pregledniku jer su nužni za rad osnovnih funkcionalnosti web stranice.",
+    "acceptAll": "Prihvati sve kolačiće",
+    "cookieSettings": "Postavke kolačića",
+    "privacyPolicy": "Politika privatnosti",
+    "changeAccepted": "Promijeni prihvaćene kolačiće",
+    "necessary": "Nužni kolačići",
+    "statistics": "Statistika"
+  },
+  "privacyPolicy": {
+    "title": "Politika privatnosti",
+    "lastUpdated": "Zadnje ažuriranje",
+    "introduction": "Ova web stranica koristi kolačiće kako bi vam osigurala najbolje iskustvo na našoj web stranici.",
+    "whatAreCookies": {
+      "title": "Što su kolačići?",
+      "content": "Kolačići su dio informacija pohranjenih na vašem računalu, mobilnom telefonu ili tabletu, koje može isporučiti izravno web stranica koju posjećujete (kolačići prve strane) ili u suradnji za potrebe treće strane (kolačići treće strane). Kolačići u pravilu spremaju vaše postavke, postavke web stranice itd. Nakon što ponovno otvorite web stranicu, vaš internetski preglednik vraća kolačiće koji pripadaju toj stranici. To omogućuje da stranica prikazuje informacije prilagod̆ene vašim potrebama."
+    },
+    "whichCookiesWeUse": {
+      "title": "Koje kolačiće koristimo?",
+      "content": "Kolačići koje koristimo na ovoj web stranici podijeljeni su u slijedeće kategorije:"
+    },
+    "cookieTypes": {
+      "necessary": {
+        "title": "Neophodni kolačići",
+        "content": "Ovi kolačići su potrebniza pravilo funkcioniranje web stranice. Omogućuju osnovne funkcije kao što su navigacija stranicom i pristup sigurnim područjima web stranice. Web stranica ne može ispravno funkcionirati bez ovih kolačića."
+      },
+      "statistics": {
+        "title": "Statistički kolačići",
+        "content": "Ovi kolačići pomažu vlasnicima web stranica razumjeti kako posjetitelji komuniciraju s web stranicama prikupljanjem i izvještavanjem informacija anonimno."
+      },
+      "marketing": {
+        "title": "Marketinški kolačići",
+        "content": "Marketinški kolačići koriste se za praćenje posjetitelja na web stranicama. Namjera je prikazivanje oglasa koji su relevantni i zanimljivi za pojedinog korisnika te su stoga vrijedni za izdavače i treće strane oglasivače."
+      },
+      "uncategorized": {
+        "title": "Nekategorizirani kolačići",
+        "content": "Nekategorizirani kolačići su kolačići koje smo u procesu klasifikacije, zajedno s pružateljima pojedinih kolačića."
+      }
+    },
+    "dataCollection": {
+      "title": "Prikupljanje podataka",
+      "content": "Prikupljamo informacije koje nam dobrovoljno pružate kada nas kontaktirate putem kontakt forme, uključujući vaše ime, email adresu, broj telefona i opis vašeg projekta."
+    },
+    "dataUsage": {
+      "title": "Korištenje podataka",
+      "content": "Vaše podatke koristimo isključivo za odgovaranje na vaše upite i pružanje naših usluga. Nećemo prodati, iznajmiti ili podijeliti vaše osobne podatke s trećim stranama bez vašeg pristanka."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "content": "Ako imate pitanja o ovoj politici privatnosti, možete nas kontaktirati na"
+    }
+  },
+  "termsOfService": {
+    "title": "Uvjeti korištenja",
+    "lastUpdated": "Zadnje ažuriranje",
+    "introduction": "Ovi uvjeti korištenja reguliraju vaše korištenje naše web stranice i usluga.",
+    "serviceUsage": {
+      "title": "Korištenje usluga",
+      "content": "Naše usluge možete koristiti u skladu s važećim zakonima i ovim uvjetima. Zabranjeno je korištenje naših usluga u nezakonite svrhe."
+    },
+    "intellectualProperty": {
+      "title": "Intelektualno vlasništvo",
+      "content": "Sav sadržaj na ovoj web stranici, uključujući tekstove, slike i logotipove, zaštićen je autorskim pravima i pripada nama ili našim licencijskim partnerima."
+    },
+    "limitation": {
+      "title": "Ograničenje odgovornosti",
+      "content": "Nismo odgovorni za bilo kakve izravne ili neizravne štete nastale korištenjem naših usluga."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "content": "Za pitanja o uvjetima korištenja možete nas kontaktirati na"
+    }
+  },
+  "metadata": {
+    "defaultDescription": "We specialize in creating modern websites, developing custom software solutions, and delivering distinctive graphic design. We also implement access control systems for businesses and facilities. All services are provided under one roof – for faster and more efficient execution of your ideas.",
+    "defaultKeywords": "web dizajn, razvoj softvera, grafički dizajn, kontrola pristupa, izrada web stranica, prilagođeni softver, mobilne aplikacije, digitalna agencija, Hrvatska",
+    "offerKeywords": "msk ponuda, msk, ponuda, ponuda digitalne agencije, uslužni paket, msk usluga",
+    "serviceKeywords": "msk usluga, msk, usluga, usluga digitalne agencije, web razvoj, razvoj softvera, msk rješenja",
+    "blogKeywords": "msk blog, msk, blog, blog digitalne agencije, savjeti za web razvoj, uvidi u razvoj softvera, msk članci",
+    "projectKeywords": "msk projekt, msk, projekt, projekt digitalne agencije, web projekt, softverski projekt, msk portfolio",
+    "home": {
+      "title": "MSK - Web Dizajn, Razvoj Softvera, Grafički Dizajn & Kontrola Pristupa",
+      "description": "Specijalizirani smo za izradu modernih web stranica, razvoj prilagođenih softverskih rješenja i prepoznatljiv grafički dizajn. Također implementiramo sustave kontrole pristupa za poslovne prostore i objekte. Sve usluge pružamo pod jednim krovom – za bržu i učinkovitiju realizaciju vaših ideja.",
+      "keywords": "web dizajn Hrvatska, razvoj softvera Zagreb, grafički dizajn usluge, kontrola pristupa sustavi, prilagođene web aplikacije, digitalna agencija Hrvatska, responzivni web dizajn, moderni web razvoj",
+      "path": ""
+    },
+    "services": {
+      "title": "Usluge - MSK",
+      "description": "Pružamo širok spektar digitalnih usluga uključujući web dizajn, razvoj softvera, grafički dizajn i sustave kontrole pristupa. Sve naše usluge su prilagođene vašim specifičnim potrebama.",
+      "keywords": "IT rješenja Hrvatska, UI/UX dizajn Zagreb, razvoj prilagođenog softvera, usluge digitalne transformacije, web aplikacije Hrvatska, sistemska integracija Zagreb, tehničko savjetovanje, enterprise rješenja Hrvatska",
+      "path": "usluge"
+    },
+    "aboutUs": {
+      "title": "O Nama - MSK",
+      "description": "Preko godina, mi smo izgradili reputaciju za pružanje visokokvalitetnih usluga našim klijentima. Mi smo tim iskusnih profesionalaca koji se predano posveća pružanju najboljih mogućih usluga našim klijentima.",
+      "keywords": "MSK tim Hrvatska, digitalni stručnjaci Zagreb, naša misija MSK, iskusni developeri Hrvatska, hrvatska tech tvrtka, MSK priča o tvrtki, profesionalni IT tim, stručnost digitalne agencije",
+      "path": "o-nama"
+    },
+    "offers": {
+      "title": "Ponude - MSK",
+      "description": "Pružamo širok spektar usluga. Istražite detaljnije svaku ponudu klikom na nju. Naše ponude su prilagođene vašim specifičnim potrebama.",
+      "keywords": "cijene web dizajna Hrvatska, ponude razvoja softvera Zagreb, pristupačni web paketi, cijene digitalne agencije, troškovi prilagođenog razvoja, ponude web dizajna Hrvatska, budžetska web rješenja, konkurentne cijene Zagreb",
+      "path": "ponude"
+    },
+    "projects": {
+      "title": "Projekti - MSK",
+      "description": "Imamo širok spektar projekata koje smo realizirali. Spremni smo ih podijeliti s vama. Projekti su odličan način da prikažemo našu radnju i naše vještine.",
+      "keywords": "studije slučaja Hrvatska, MSK portfolio Zagreb, priče o uspjehu klijenata, prikaz projekata Hrvatska, primjeri web razvoja, portfolio softverskih projekata, rezultati digitalnih projekata, Hrvatska galerija projekata",
+      "path": "projekti"
+    },
+    "blog": {
+      "title": "Blog - MSK",
+      "description": "Pogledajte naš blog kako biste se educirali o našim uslugama. Možete se registrirati i koristiti našu platformu za kontrolu pristupa.",
+      "keywords": "tech uvidi Hrvatska, savjeti digitalne transformacije, blog razvoja softvera, tutorijali web razvoja, hrvatski tech blog, trendovi industrije Zagreb, programerski uvidi, tehnološko obrazovanje Hrvatska",
+      "path": "blog"
+    },
+    "contact": {
+      "title": "Kontakt - MSK",
+      "description": "Imate ideju, projekt ili pitanje? Javite nam se i zajedno ćemo pronaći najbolje rješenje za vaše potrebe.",
+      "keywords": "kontakt MSK Zagreb, besplatne konzultacije Hrvatska, upit za web dizajn, konzultacije projekta Zagreb, MSK ured Hrvatska, ponuda Zagreb, kontakt digitalne agencije, rezervacija konzultacije Hrvatska",
+      "path": "kontakt"
+    },
+    "privacyPolicy": {
+      "title": "Politika privatnosti - MSK",
+      "description": "Ova web stranica koristi kolačiće kako bi vam osigurala najbolje iskustvo na našoj web stranici.",
+      "keywords": "politika privatnosti, kolačići, zaštita podataka, osobne informacije, GDPR, korištenje podataka, prava privatnosti",
+      "path": "politika-privatnosti"
+    },
+    "termsOfService": {
+      "title": "Uvjeti korištenja - MSK",
+      "description": "Ovi uvjeti korištenja reguliraju vaše korištenje naše web stranice i usluga.",
+      "keywords": "uvjeti korištenja, uvjeti usluge, pravni uvjeti, ugovor o usluzi, korisnički ugovor, uvjeti web stranice",
+      "path": "uvjeti-korištenja"
+    }
+  }
+}

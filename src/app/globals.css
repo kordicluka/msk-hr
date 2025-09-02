@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  /* Osnovne boje pozadine i teksta za svijetlu temu */
+  --background: oklch(1 0 0); /* Bijela pozadina */
+  --foreground: oklch(0.145 0 0); /* Tamno siva ili crna boja teksta */
+
+  /* Boje za kartice (npr. paneli, moduli) */
+  --card: oklch(1 0 0); /* Bijela pozadina kartice */
+  --card-foreground: oklch(
+    0.145 0 0
+  ); /* Tamno siva ili crna boja teksta unutar kartice */
+
+  /* Boje za iskačuće prozore (npr. dropdown-ovi, modali) */
+  --popover: oklch(1 0 0); /* Bijela pozadina iskačućeg prozora */
+  --popover-foreground: oklch(
+    0.145 0 0
+  ); /* Tamno siva ili crna boja teksta unutar iskačućeg prozora */
+
+  /* Primarna boja - tvoja odabrana elegantna, profesionalna boja */
+  --primary: oklch(0.22 0.043955 230.173); /* Tvoja primarna boja */
+  --primary-foreground: oklch(
+    0.985 0 0
+  ); /* Boja teksta ili ikona koje se koriste na primarnoj boji (bijela ili vrlo svijetla) */
+
+  /* Sekundarna boja - za manje istaknute elemente, ali i dalje važna */
+  --secondary: var(--color-blue-600); /* Tvoja sekundarna boja (UPDATED) */
+  --secondary-foreground: oklch(
+    0.985 0 0
+  ); /* Boja teksta ili ikona koje se koriste na sekundarnoj boji (bijela ili vrlo svijetla) */
+
+  /* Prigušena boja - za pozadine manje važnih sekcija, separatore ili manje istaknut tekst */
+  --muted: var(--color-gray-100); /* Tvoja prigušena boja (svijetlo siva) */
+  --muted-foreground: oklch(
+    0.556 0 0
+  ); /* Boja teksta na prigušenoj pozadini (srednje siva) */
+
+  /* Naglasna boja - za isticanje važnih akcija, gumba ili elemenata */
+  --accent: oklch(0.82 0.1453 216.5); /* Tvoja naglasna boja */
+  --accent-foreground: oklch(
+    0.145 0 0
+  ); /* Boja teksta ili ikona koje se koriste na naglasnoj boji (tamno siva ili crna) */
+
+  /* Boje za destruktivne akcije (npr. brisanje, uklanjanje) */
+  --destructive: oklch(
+    0.577 0.245 27.325
+  ); /* Crvenkasta boja za označavanje opasnih akcija */
+  --destructive-foreground: oklch(
+    0.985 0 0
+  ); /* Boja teksta na destruktivnoj pozadini (bijela ili vrlo svijetla) */
+
+  /* Boja za granice elemenata */
+  --border: oklch(
+    0.922 0 0
+  ); /* Svijetlo siva boja za linije razdvajanja i okvire */
+
+  /* Boja za pozadinu input polja */
+  --input: var(--color-gray-200); /* Svijetlo siva boja za pozadinu polja za unos */
+
+  /* Boja za fokus prstena (outline oko fokusiranih elemenata) */
+  --ring: oklch(0.708 0 0); /* Srednje siva boja za indikator fokusa */
+
+  /* Boje za grafikone - možeš ih koristiti za vizualizaciju podataka */
+  --chart-1: oklch(0.646 0.222 41.116); /* Prva boja za grafikone */
+  --chart-2: oklch(0.6 0.118 184.704); /* Druga boja za grafikone */
+  --chart-3: oklch(0.398 0.07 227.392); /* Treća boja za grafikone */
+  --chart-4: oklch(0.828 0.189 84.429); /* Četvrta boja za grafikone */
+  --chart-5: oklch(0.769 0.188 70.08); /* Peta boja za grafikone */
+
+  /* Standardni radijus za zaobljene kutove */
+  --radius: 0.625rem;
+
+  /* Boje specifične za sidebar (ako ga imaš) */
+  --sidebar: oklch(255 0 0); /* Vrlo svijetla pozadina sidebar-a */
+  --sidebar-foreground: oklch(0.145 0 0); /* Boja teksta u sidebar-u */
+  --sidebar-primary: oklch(
+    0.205 0 0
+  ); /* Primarna boja unutar sidebar-a (može biti ista kao --primary ili varijacija) */
+  --sidebar-primary-foreground: oklch(
+    0.985 0 0
+  ); /* Boja teksta na primarnoj boji unutar sidebar-a */
+  --sidebar-accent: oklch(
+    0.97 0 0
+  ); /* Naglasna boja unutar sidebar-a (može biti ista kao --accent ili varijacija) */
+  --sidebar-accent-foreground: oklch(
+    0.205 0 0
+  ); /* Boja teksta na naglasnoj boji unutar sidebar-a */
+  --sidebar-border: var(--color-gray-200);
+  --sidebar-ring: oklch(0.708 0 0); /* Boja fokus prstena unutar sidebar-a */
+  --admin-primary:oklch(
+    0.2853 0.1242 261.12
+  ); /* Tvoja primarna boja */
+  
+}
+
+.dark {
+  /* Tamna tema - redefiniranje boja za tamnu pozadinu */
+  --background: oklch(0.145 0 0); /* Tamno siva ili crna pozadina */
+  --foreground: oklch(0.985 0 0); /* Bijela ili vrlo svijetla boja teksta */
+  --card: oklch(0.145 0 0); /* Tamna pozadina kartice */
+  --card-foreground: oklch(
+    0.985 0 0
+  ); /* Bijela ili vrlo svijetla boja teksta unutar kartice */
+  --popover: oklch(0.145 0 0); /* Tamna pozadina iskačućeg prozora */
+  --popover-foreground: oklch(
+    0.985 0 0
+  ); /* Bijela ili vrlo svijetla boja teksta unutar iskačućeg prozora */
+  --primary: oklch(
+    0.22 0.043955 230.173
+  ); /* Tvoja primarna boja (ostaje ista ili se prilagođava za bolji kontrast) */
+  --primary-foreground: oklch(0.985 0 0); /* Boja teksta na primarnoj boji */
+  --secondary: oklch(
+    0.2853 0.1242 261.12
+  ); /* Tvoja sekundarna boja (UPDATED) */
+  --secondary-foreground: oklch(
+    0.985 0 0
+  ); /* Boja teksta na sekundarnoj boji */
+  --secondary-light: oklch(0.9133 0.0311 228.2) /* Boja teksta na sekundarnoj boji */
+  --muted: oklch(0.269 0 0); /* Tamnija prigušena pozadina */
+  --muted-foreground: oklch(
+    0.708 0 0
+  ); /* Svjetlija boja teksta na prigušenoj pozadini */
+  --accent: oklch(
+    0.82 0.1453 216.5
+  ); /* Tvoja naglasna boja (ostaje ista ili se prilagođava) */
+  --accent-foreground: oklch(0.985 0 0); /* Boja teksta na naglasnoj boji */
+  --destructive: oklch(
+    0.396 0.141 25.723
+  ); /* Tamnija nijansa destruktivne boje */
+  --destructive-foreground: oklch(
+    0.637 0.237 25.331
+  ); /* Svjetlija boja teksta na destruktivnoj pozadini */
+  --border: oklch(0.269 0 0); /* Tamnija boja za granice */
+  --input: oklch(0.269 0 0); /* Tamnija pozadina input polja */
+  --ring: oklch(0.439 0 0); /* Tamnija boja fokus prstena */
+  --chart-1: oklch(
+    0.488 0.243 264.376
+  ); /* Prilagođene boje za grafikone za tamnu temu */
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0); /* Tamnija pozadina sidebar-a */
+  --sidebar-foreground: oklch(
+    0.985 0 0
+  ); /* Svjetlija boja teksta u sidebar-u */
+  --sidebar-primary: oklch(
+    0.488 0.243 264.376
+  ); /* Prilagođena primarna boja unutar sidebar-a */
+  --sidebar-primary-foreground: oklch(
+    0.985 0 0
+  ); /* Svjetlija boja teksta na primarnoj boji unutar sidebar-a */
+  --sidebar-accent: oklch(
+    0.269 0 0
+  ); /* Prilagođena naglasna boja unutar sidebar-a */
+  --sidebar-accent-foreground: oklch(
+    0.985 0 0
+  ); /* Svjetlija boja teksta na naglasnoj boji unutar sidebar-a */
+  --sidebar-border: oklch(0.269 0 0); /* Tamnija boja granice sidebar-a */
+  --sidebar-ring: oklch(
+    0.439 0 0
+  ); /* Tamnija boja fokus prstena unutar sidebar-a */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px); /* Manji radijus za manje elemente */
+  --radius-md: calc(var(--radius) - 2px); /* Srednji radijus */
+  --radius-lg: var(--radius); /* Standardni radijus */
+  --radius-xl: calc(
+    var(--radius) + 4px
+  ); /* Veći radijus za istaknutije elemente */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Responzivni H tagovi */
+  h1 {
+    @apply text-4xl  md:text-6xl lg:text-7xl tracking-tighter max-w-7xl font-semibold leading-tight sm:leading-snug md:leading-normal lg:leading-22;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-tighter font-semibold;
+  }
+
+  h3 {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tighter font-medium;
+  }
+
+  h4 {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium;
+  }
+
+  h5 {
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium;
+  }
+
+  h6 {
+    @apply text-base sm:text-lg md:text-xl lg:text-2xl font-medium;
+  }
+
+}
+
+/* Autofill animacija za detekciju kada preglednik automatski popuni polje */
+@keyframes onAutoFillStart {
+  from {
+    /* prazno */
+  }
+  to {
+    /* prazno */
+  }
+}
+
+/* Primjenjujemo animaciju na input element kada ga preglednik automatski popuni */
+input:-webkit-autofill {
+  animation-name: onAutoFillStart;
+  animation-duration: 1ms; /* Dovoljno je samo da se pokrene */
+}
+
+.radial-gradient {
+  background: radial-gradient(circle, #fff 0%, #fff 100%);
+}
+

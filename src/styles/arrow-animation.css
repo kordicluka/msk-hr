@@ -1,0 +1,9 @@
+/* You can add this to your global CSS file */
+.arrow-icon {
+  transition: width 0.3s ease;
+  width: 16px;
+}
+
+.group:hover .arrow-icon {
+  width: 24px;
+}

@@ -1,0 +1,227 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("PROD_DATABASE_URL")
+}
+
+model Account {
+  id                 String  @id @default(uuid())
+  userId             String
+  type               String
+  provider           String
+  providerAccountId  String
+  refresh_token      String?
+  access_token       String?
+  expires_at         Int?
+  token_type         String?
+  scope              String?
+  id_token           String?
+  session_state      String?
+  oauth_token_secret String?
+  oauth_token        String?
+  user               User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model User {
+  id             String    @id @default(uuid())
+  name           String?
+  email          String    @unique
+  emailVerified  DateTime?
+  image          String?
+  hashedPassword String
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  accounts       Account[]
+  sessions       Session[]
+
+  @@index([id])
+  @@index([email])
+}
+
+model Session {
+  id           String   @id @default(uuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model Service {
+  id              String               @id @default(uuid())
+  parentServiceId String?              @map("parent_service_id")
+  image           String
+  order           Int                  @default(0)
+  createdAt       DateTime             @default(now()) @map("created_at")
+  updatedAt       DateTime             @updatedAt @map("updated_at")
+  blogs           BlogService[]
+  offers          OfferService[]
+  projects        ProjectService[]
+  translations    ServiceTranslation[]
+  parentService   Service?             @relation("ServiceHierarchy", fields: [parentServiceId], references: [id])
+  childServices   Service[]            @relation("ServiceHierarchy")
+  
+  @@map("services")
+}
+
+model ServiceTranslation {
+  id               String  @id @default(uuid())
+  serviceId        String  @map("service_id")
+  languageCode     String  @map("language_code")
+  slug             String
+  title            String
+  subtitle         String
+  description      String
+  shortDescription String  @map("short_description")
+  content          String
+  keywords         String[]
+  service          Service @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+
+  @@unique([serviceId, languageCode])
+  @@unique([slug, languageCode])
+  @@map("service_translations")
+}
+
+model Offer {
+  id           String             @id @default(uuid())
+  priceFrom    String             @map("price_from")
+  priceTo      String             @map("price_to")
+  icon         String
+  order        Int                @default(0)
+  createdAt    DateTime           @default(now()) @map("created_at")
+  updatedAt    DateTime           @updatedAt @map("updated_at")
+  services     OfferService[]
+  translations OfferTranslation[]
+
+  @@map("offers")
+}
+
+model OfferTranslation {
+  id           String @id @default(uuid())
+  offerId      String @map("offer_id")
+  languageCode String @map("language_code")
+  slug         String
+  title        String
+  subtitle     String
+  description  String
+  content      String
+  keywords         String[]
+
+  offer        Offer  @relation(fields: [offerId], references: [id], onDelete: Cascade)
+
+  @@unique([offerId, languageCode])
+  @@unique([slug, languageCode])
+  @@map("offer_translations")
+}
+
+model OfferService {
+  id        String  @id @default(uuid())
+  offerId   String  @map("offer_id")
+  serviceId String  @map("service_id")
+  offer     Offer   @relation(fields: [offerId], references: [id], onDelete: Cascade)
+  service   Service @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+
+  @@unique([offerId, serviceId])
+  @@map("offer_services")
+}
+
+model Project {
+  id           String               @id @default(uuid())
+  image        String
+  order        Int                  @default(0)
+  createdAt    DateTime             @default(now()) @map("created_at")
+  updatedAt    DateTime             @updatedAt @map("updated_at")
+  services     ProjectService[]
+  translations ProjectTranslation[]
+
+  @@map("projects")
+}
+
+model ProjectTranslation {
+  id               String  @id @default(uuid())
+  projectId        String  @map("project_id")
+  languageCode     String  @map("language_code")
+  slug             String
+  title            String
+  description      String
+  shortDescription String  @map("short_description")
+  content          String
+  keywords         String[]
+  project          Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, languageCode])
+  @@unique([slug, languageCode])
+  @@map("project_translations")
+}
+
+model ProjectService {
+  id        String  @id @default(uuid())
+  projectId String  @map("project_id")
+  serviceId String  @map("service_id")
+  project   Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  service   Service @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, serviceId])
+  @@map("project_services")
+}
+
+model Blog {
+  id           String            @id @default(uuid())
+  image        String
+  order        Int               @default(0)
+  createdAt    DateTime          @default(now()) @map("created_at")
+  updatedAt    DateTime          @updatedAt @map("updated_at")
+  services     BlogService[]
+  translations BlogTranslation[]
+
+  @@map("blogs")
+}
+
+model BlogTranslation {
+  id               String @id @default(uuid())
+  blogId           String @map("blog_id")
+  languageCode     String @map("language_code")
+  slug             String
+  title            String
+  description      String
+  shortDescription String @map("short_description")
+  content          String
+  keywords         String[]
+  blog             Blog   @relation(fields: [blogId], references: [id], onDelete: Cascade)
+
+  @@unique([blogId, languageCode])
+  @@unique([slug, languageCode])
+  @@map("blog_translations")
+}
+
+model Newsletter {
+  id        String           @id @default(uuid())
+  email     String           @unique
+  status    NewsletterStatus @default(SUBSCRIBED)
+  createdAt DateTime         @default(now()) @map("created_at")
+  updatedAt DateTime         @updatedAt @map("updated_at")
+
+  @@map("newsletters")
+}
+
+model BlogService {
+  id        String  @id @default(uuid())
+  blogId    String  @map("blog_id")
+  serviceId String  @map("service_id")
+  blog      Blog    @relation(fields: [blogId], references: [id], onDelete: Cascade)
+  service   Service @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+
+  @@unique([blogId, serviceId])
+  @@map("blog_services")
+}
+
+enum NewsletterStatus {
+  SUBSCRIBED
+  UNSUBSCRIBED
+}

@@ -1,0 +1,348 @@
+{
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "ourProjects": "Our Projects",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "blog": "Blog",
+    "contactUs": "Contact Us",
+    "offers": "Offers"
+  },
+  "home": {
+    "hero": {
+      "ourServiceIncludes": "Our Services Include",
+      "learnMore": "Learn More",
+      "description": "We specialize in creating modern websites, developing custom software solutions, and delivering distinctive graphic design. We also implement access control systems for businesses and facilities. All services are provided under one roof – for faster and more efficient execution of your ideas.",
+      "title": "Web Design, Software Development, Graphic Design & Access Control",
+      "getInTouch": "Get In Touch",
+      "exploreOffers": "Explore Offers",
+      "exploreServices": "Explore Services"
+    },
+    "projects": {
+      "title": "Check out our latest projects.",
+      "description": "View our projects and learn more about our services. Explore how we approach projects and what technologies we use to solve our clients' problems.",
+      "learnMore": "Learn More"
+    },
+    "webshop": {
+      "title": "Complete webshop development",
+      "description": "Webshop development for your company or project. The webshop will be tailored to your needs, reflecting your brand's identity and values.",
+      "mobileApp": {
+        "title": "Mobile Shop App Development",
+        "description": "We develop a modern mobile app for your webshop, compatible with iOS and Android, featuring a user-friendly interface and smooth purchasing experience."
+      },
+      "website": {
+        "title": "Webshop Website Development",
+        "description": "We build a professional, responsive webshop website with fast loading times, secure checkout, and full customization to match your brand’s style."
+      },
+      "trackingApp": {
+        "title": "Order Tracking App Development",
+        "description": "Allow your customers to track orders in real time through an intuitive app showing order status, location, and estimated delivery time."
+      }
+    },
+    "offers": {
+      "title": "Our offers",
+      "description": "Browse our customized offers for web design, graphic design, software development and access control. Each offer is created to meet your specific needs."
+    },
+    "technologies": {
+      "title": "Technologies we use",
+      "description": "We continuously follow the latest technologies and trends to ensure that our clients get the best possible solution."
+    },
+    "blog": {
+      "title": "Read something interesting.",
+      "description": "Check out our latest blog posts and learn something new that you could apply in your business.",
+      "ctaText": "View More",
+      "cardCtaText": "Read More"
+    },
+    "cta": {
+      "title": "Need a solution for your project?\nContact us now!",
+      "description": "Our innovative approach empowers your organization to conquer challenges, optimize revenue outcomes, and drive unparalleled success in the ever-evolving business landscape.",
+      "buttonText": "Contact Us"
+    },
+    "faq": {
+      "faq1": {
+        "question": "How long does website development take?",
+        "answer": "Development time depends on project complexity. Simple websites (up to 5 pages) are usually completed within 7-14 days, while more advanced sites, user accounts or integrations can take 3-6 weeks."
+      },
+      "faq2": {
+        "question": "What does graphic design include?",
+        "answer": "We offer logo design, visual identity (colors, typography), promotional materials (posters, flyers), social media design, packaging design and print preparation. We can also include mockups and examples of design implementation in real situations."
+      },
+      "faq3": {
+        "question": "Do you develop web applications, not just websites?",
+        "answer": "Yes, we specialize in custom web applications that include user accounts, data management, booking systems, CRM solutions and more. We use modern technologies like Next.js, NestJS, PostgreSQL, SQLite, Prisma, React, and others."
+      },
+      "faq4": {
+        "question": "Can you help with website maintenance?",
+        "answer": "Yes, we offer maintenance packages that include security updates, backups, content additions and technical support. "
+      },
+      "faq5": {
+        "question": "What access control systems do you offer?",
+        "answer": "We work with reliable solutions like Sebury devices (keyboards, card readers, RFID/NFC systems, Mobile App) and integrate them into your existing infrastructure."
+      },
+      "faq6": {
+        "question": "What does the collaboration process look like?",
+        "answer": "The process usually goes like this:\n1. Initial meeting either online (MS Teams, Google Meet, ...) or in person – we define your goals and needs\n2. Proposal and agreement – we create a proposal and plan\n3. Development – design, development and testing\n4. Delivery and support – final review and support after delivery"
+      }
+    }
+  },
+  "footer": {
+    "ctaTitle": "Need a solution for your project? Contact us now!",
+    "ctaButtonPrimary": "Let's Start",
+    "ctaButtonSecondary": "Our Offers",
+    "ctaDescription": "*We will respond as soon as possible to help you.",
+    "newsletterTitle": "Exclusive news, tips and offers. Newsletter arrives in your inbox.",
+    "newsletterDescription": "Sign up and be among the first to know about new services, useful tips and special offers.",
+    "privacyItem1": "Cookie Settings",
+    "privacyItem2": "Privacy Policy",
+    "privacyItem3": "Terms of Use",
+    "sectionOffers": "Offers",
+    "sectionProjects": "Projects",
+    "sectionPages": "Pages",
+    "sectionContactInfo": "Contact Information",
+    "services": "Services",
+    "offers": "Offers",
+    "projects": "Projects",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "home": "Home",
+    "blog": "Blog",
+    "newsletterErrorMessage": "Please enter a valid email address.",
+    "newsletterSuccessMessage": "Thank you for subscribing to our newsletter! You will receive the first email soon."
+  },
+  "ServicePage": {
+    "serviceOffering": "Service Offering",
+    "whatsIncluded": "What's Included?",
+    "readyToStart": "Ready to start with {serviceName}?",
+    "contactUsPrompt": "Let's discuss how we can help you achieve your goals.",
+    "getInTouch": "Get In Touch"
+  },
+  "cardsList": {
+    "learnMore": "Learn More"
+  },
+  "projectsPage": {
+    "title": "Projects we have worked on over the years.",
+    "description": "We have a wide range of projects that we have worked on. We are proud to share them with you. Projects are a great way to showcase our work and our skills.",
+    "buttons": []
+  },
+  "aboutUsPage": {
+    "title": "We are a dedicated team for your success.",
+    "description": "Over the years, we have built a reputation for providing high-quality services to our clients. We are a team of experienced professionals who are dedicated to providing the best possible service to our clients.",
+    "ourApproach": {
+      "title": "Our Approach",
+      "description": "We implement a systematic approach in developing digital solutions, focusing on business process optimization and strategic market positioning through modern technologies."
+    },
+    "ourTeam": {
+      "title": "Who We Are",
+      "description": "Our expert team consists of experienced professionals specialized in digital technologies, who continuously track the latest industry trends and apply best practices in project implementation."
+    },
+    "ourValues": {
+      "title": "Our Values",
+      "description": "We are focused on achieving excellence through an integrated approach, professional collaboration and implementation of innovative solutions that enable long-term growth and competitiveness for our clients."
+    },
+    "buttons": []
+  },
+  "servicesPage": {
+    "title": "Our Services",
+    "description": "We provide a comprehensive range of digital services tailored to your business needs. From web design to software development, we have the expertise to bring your vision to life.",
+    "learnMore": "Learn More"
+  },
+  "contactPage": {
+    "title": "Contact us",
+    "description": "Have an idea, project or question? Get in touch and together we will find the best solution for your needs.",
+    "formTitle": "Contact us via form, email or phone.",
+    "formDescription": "We will contact you soon.",
+    "addressLabel": "Address:",
+    "phoneLabel": "Phone:",
+    "emailLabel": "Email:",
+    "contactPersonLabel": "Contact person:",
+    "buttons": []
+  },
+  "offersPage": {
+    "title": "Choose an offer",
+    "description": "We provide a wide range of services. Explore each offer in detail by clicking on it.",
+    "noOffersText": "No offers for selected services.",
+    "viewOfferButton": "View offer",
+    "contactUsButton": "Contact Us",
+    "buttons": []
+  },
+  "blogPage": {
+    "title": "Check out our blog.",
+    "description": "Check out our blog to learn about our services.",
+    "buttons": []
+  },
+  "contactForm": {
+    "firstName": "First Name",
+    "firstNamePlaceholder": "Enter your first name",
+    "lastName": "Last Name",
+    "lastNamePlaceholder": "Enter your last name",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email address",
+    "phone": "Phone Number",
+    "phonePlaceholder": "Enter your phone number",
+    "service": "Service",
+    "projectDescription": "Project Description",
+    "projectDescriptionPlaceholder": "Describe your project or needs",
+    "privacyPolicy": "I agree with the privacy policy. Learn more about our policy at the link. You can always contact our support.",
+    "submitButton": "Send",
+    "languagePreference": "Communication Language",
+    "languagePreferencePlaceholder": "Select language",
+    "croatian": "Croatian",
+    "english": "English",
+    "otherService": "Something else",
+    "validation": {
+      "firstNameMin": "First name must have at least 2 characters.",
+      "lastNameMin": "Last name must have at least 2 characters.",
+      "emailInvalid": "Please enter a valid email address.",
+      "phoneMin": "Please enter a valid phone number.",
+      "serviceRequired": "Please select a service.",
+      "projectDescriptionMin": "Project description must have at least 10 characters.",
+      "privacyPolicyRequired": "Please accept the privacy policy to continue."
+    },
+    "alerts": {
+      "success": "Successfully sent inquiry! We will contact you soon.",
+      "error": "An error occurred while sending the inquiry. Please try again."
+    },
+    "submitting": "Sending...",
+    "submit": "Send"
+  },
+  "cookies": {
+    "title": "Manage Cookies",
+    "description": "We use cookies to ensure you get the best experience on our website. By continuing to use our site, you agree to our use of cookies.",
+    "settingsTitle": "Cookie Settings",
+    "settingsDescription": "This website uses cookies to improve your experience while navigating through the website. Out of these cookies, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the website.",
+    "acceptAll": "Accept All Cookies",
+    "cookieSettings": "Cookie Settings",
+    "privacyPolicy": "Privacy Policy",
+    "changeAccepted": "Change Accepted Cookies",
+    "necessary": "Necessary",
+    "statistics": "Statistics"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated",
+    "introduction": "This website uses cookies to ensure you get the best experience on our website.",
+    "whatAreCookies": {
+      "title": "What are cookies?",
+      "content": "Cookies are pieces of information stored on your computer, mobile phone or tablet, which can be delivered directly by the website you visit (first-party cookies) or in collaboration for the needs of third parties (third-party cookies). Cookies typically store your settings, website settings, etc. After you reopen the website, your internet browser returns the cookies that belong to that page. This allows the page to display information tailored to your needs."
+    },
+    "whichCookiesWeUse": {
+      "title": "Which cookies do we use?",
+      "content": "The cookies we use on this website are divided into the following categories:"
+    },
+    "cookieTypes": {
+      "necessary": {
+        "title": "Necessary cookies",
+        "content": "These cookies are necessary for the proper functioning of the website. They enable basic functions such as page navigation and access to secure areas of the website. The website cannot function properly without these cookies."
+      },
+      "statistics": {
+        "title": "Statistical cookies",
+        "content": "These cookies help website owners understand how visitors communicate with websites by collecting and reporting information anonymously."
+      },
+      "marketing": {
+        "title": "Marketing cookies",
+        "content": "Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and interesting to individual users and are therefore valuable to publishers and third party advertisers."
+      },
+      "uncategorized": {
+        "title": "Uncategorized cookies",
+        "content": "Uncategorized cookies are cookies that we are in the process of classifying, together with the providers of individual cookies."
+      }
+    },
+    "dataCollection": {
+      "title": "Data Collection",
+      "content": "We collect information that you voluntarily provide to us when you contact us via the contact form, including your name, email address, phone number and description of your project."
+    },
+    "dataUsage": {
+      "title": "Data Usage",
+      "content": "We use your data exclusively to respond to your inquiries and provide our services. We will not sell, rent or share your personal data with third parties without your consent."
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "If you have questions about this privacy policy, you can contact us at"
+    }
+  },
+  "termsOfService": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated",
+    "introduction": "These terms of service govern your use of our website and services.",
+    "serviceUsage": {
+      "title": "Service Usage",
+      "content": "You may use our services in accordance with applicable laws and these terms. It is prohibited to use our services for illegal purposes."
+    },
+    "intellectualProperty": {
+      "title": "Intellectual Property",
+      "content": "All content on this website, including text, images and logos, is protected by copyright and belongs to us or our licensing partners."
+    },
+    "limitation": {
+      "title": "Limitation of Liability",
+      "content": "We are not responsible for any direct or indirect damages resulting from the use of our services."
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "For questions about the terms of service, you can contact us at"
+    }
+  },
+
+  "metadata": {
+    "defaultDescription": "We specialize in creating modern websites, developing custom software solutions, and delivering distinctive graphic design. We also implement access control systems for businesses and facilities. All services are provided under one roof – for faster and more efficient execution of your ideas.",
+    "defaultKeywords": "web design, software development, graphic design, access control, website development, custom software, mobile apps, digital agency, Croatia",
+    "offerKeywords": "msk offer, msk, offer, digital agency offer, service package, msk service",
+    "serviceKeywords": "msk service, msk, service, digital agency service, web development, software development, msk solutions",
+    "blogKeywords": "msk blog, msk, blog, digital agency blog, web development tips, software development insights, msk articles",
+    "projectKeywords": "msk project, msk, project, digital agency project, web development project, software project, msk portfolio",
+    "home": {
+      "title": "MSK - Web Design, Software Development, Graphic Design & Access Control",
+      "description": "We specialize in creating modern websites, developing custom software solutions, and delivering distinctive graphic design. We also implement access control systems for businesses and facilities. All services are provided under one roof – for faster and more efficient execution of your ideas.",
+      "keywords": "MSK digital agency Croatia, web design Croatia, software development Zagreb, graphic design access control, digital solutions Croatia, MSK Croatia, one-stop digital agency, comprehensive digital services",
+      "path": ""
+    },
+    "services": {
+      "title": "Services - MSK",
+      "description": "We provide a wide range of digital services including web design, software development, graphic design and access control systems. All our services are tailored to your specific needs.",
+      "keywords": "IT solutions Croatia, UI/UX design Zagreb, custom software development, digital transformation services, web applications Croatia, system integration Zagreb, technical consulting, enterprise solutions Croatia",
+      "path": "services"
+    },
+    "aboutUs": {
+      "title": "About Us - MSK",
+      "description": "Over the years, we have built a reputation for providing high-quality services to our clients. We are a team of experienced professionals who are dedicated to providing the best possible service to our clients.",
+      "keywords": "MSK team Croatia, digital experts Zagreb, our mission MSK, experienced developers Croatia, Croatian tech company, MSK company story, professional IT team, digital agency expertise",
+      "path": "about-us"
+    },
+    "offers": {
+      "title": "Offers - MSK",
+      "description": "Browse our customized offers for web design, graphic design, software development and access control. Each offer is created to meet your specific needs.",
+      "keywords": "web design pricing Croatia, software development offers Zagreb, affordable web packages, digital agency pricing, custom development costs, web design quotes Croatia, budget web solutions, competitive pricing Zagreb",
+      "path": "offers"
+    },
+    "projects": {
+      "title": "Projects - MSK",
+      "description": "We have a wide range of projects that we have worked on. We are proud to share them with you. Projects are a great way to showcase our work and our skills.",
+      "keywords": "case studies Croatia, MSK portfolio Zagreb, client success stories, project showcase Croatia, web development examples, software project portfolio, digital project results, Croatia project gallery",
+      "path": "projects"
+    },
+    "blog": {
+      "title": "Blog - MSK",
+      "description": "Check out our latest blog posts and learn more about our services. You can register and use our access control platform.",
+      "keywords": "tech insights Croatia, digital transformation tips, software development blog, web development tutorials, Croatian tech blog, industry trends Zagreb, programming insights, technology education Croatia",
+      "path": "blog"
+    },
+    "contact": {
+      "title": "Contact - MSK",
+      "description": "Have an idea, project or question? Get in touch and together we will find the best solution for your needs.",
+      "keywords": "contact MSK Zagreb, free consultation Croatia, web design inquiry, project consultation Zagreb, MSK office Croatia, get quote Zagreb, digital agency contact, consultation booking Croatia",
+      "path": "contact"
+    },
+    "privacyPolicy": {
+      "title": "Privacy Policy - MSK",
+      "description": "This website uses cookies to ensure you get the best experience on our website.",
+      "keywords": "privacy policy, cookies, data protection, personal information, GDPR, data usage, privacy rights",
+      "path": "privacy-policy"
+    },
+    "termsOfService": {
+      "title": "Terms of Service - MSK",
+      "description": "These terms of service govern your use of our website and services.",
+      "keywords": "terms of service, terms of use, legal terms, service agreement, user agreement, website terms",
+      "path": "terms-of-service"
+    }
+  }
+}

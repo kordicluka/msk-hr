@@ -1,0 +1,145 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10.8.1
+          run_install: false
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Create .env file
+        run: |
+          echo "Kreiram .env datoteku..."
+          cat << EOF > .env
+          PROD_DATABASE_URL=${{ secrets.PROD_DATABASE_URL }}
+          NEXTAUTH_SECRET=${{ secrets.NEXTAUTH_SECRET }}
+          NEXTAUTH_URL=${{ secrets.NEXTAUTH_URL }}
+          NEXT_PUBLIC_MEASUREMENT_ID=${{ secrets.NEXT_PUBLIC_MEASUREMENT_ID }}
+          AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION=${{ secrets.AWS_REGION }}
+          AWS_S3_BUCKET_NAME=${{ secrets.AWS_S3_BUCKET_NAME }}
+          SMTP_USER=${{ secrets.SMTP_USER }}
+          SMTP_PASS=${{ secrets.SMTP_PASS }}
+          SMTP_PORT=${{ secrets.SMTP_PORT }}
+          SMTP_HOST=${{ secrets.SMTP_HOST }}
+          NEXT_PUBLIC_BASE_URL=${{ secrets.NEXT_PUBLIC_BASE_URL }}
+          EOF
+          echo ".env datoteka kreirana."
+
+      - name: Generate Prisma Client
+        run: pnpm prisma generate
+
+      - name: Build Next.js App
+        run: pnpm build
+
+      - name: Create PM2 Ecosystem File
+        run: |
+          echo "Kreiram ecosystem.config.js..."
+          cat << EOF > ecosystem.config.js
+          module.exports = {
+            apps : [{
+              name   : "msk",
+              script : "node",
+              args   : "node_modules/next/dist/bin/next start -p 3010",
+              cwd    : __dirname,
+              env: {
+                NODE_ENV: "production",
+                PORT: "3010"
+              }
+            }]
+          }
+          EOF
+          echo "ecosystem.config.js kreiran."
+
+      - name: Deploy or Reload with PM2 using Ecosystem File
+        run: |
+          echo "Trenutni direktorij: $(pwd)"
+          ls -la
+
+          PM2_PATH=$(which pm2)
+          if [ -z "$PM2_PATH" ]; then
+            echo "PM2 nije pronađen."
+            exit 1
+          fi
+          echo "PM2 putanja: $PM2_PATH"
+
+          # Provjeri da li aplikacija već postoji
+          if $PM2_PATH list | grep -q "msk"; then
+            echo "Aplikacija 'msk' već postoji - reloadujem..."
+          else
+            echo "Aplikacija 'msk' ne postoji - pokrećem novu..."
+          fi
+
+          # startOrReload automatski detektira i pokreće ili reloaduje
+          echo "Pokretanje ili reloadanje aplikacije 'msk'..."
+          $PM2_PATH startOrReload ecosystem.config.js
+          RELOAD_STATUS=$?
+
+          if [ $RELOAD_STATUS -ne 0 ]; then
+             echo "PM2 startOrReload nije uspio s exit code $RELOAD_STATUS."
+             echo "Ispisujem zadnjih 20 linija PM2 logova za msk:"
+             sleep 2
+             $PM2_PATH logs msk --lines 20 --nostream || echo "Nije moguće dohvatiti PM2 logove."
+             exit $RELOAD_STATUS
+          fi
+
+          echo "PM2 startOrReload uspješan."
+
+          # Spremi trenutnu listu procesa da preživi restart servera
+          echo "Spremam listu PM2 procesa..."
+          $PM2_PATH save
+          echo "PM2 lista spremljena."
+
+      - name: Health Check
+        run: |
+          echo "Provjeravam health aplikacije..."
+          # Daj aplikaciji vremena da se pokrene
+          sleep 5
+
+          # Provjeri da li je PM2 proces aktivan
+          PM2_PATH=$(which pm2)
+          if $PM2_PATH list | grep -q "msk.*online"; then
+            echo "✅ PM2 proces 'msk' je online"
+          else
+            echo "❌ PM2 proces 'msk' nije online"
+            $PM2_PATH list
+            exit 1
+          fi
+
+          # Provjeri HTTP odgovor (prilagodi port prema potrebi)
+          if curl -f -s http://localhost:3010 > /dev/null; then
+            echo "✅ Aplikacija odgovara na HTTP zahtjeve"
+          else
+            echo "❌ Aplikacija ne odgovara na HTTP zahtjeve"
+            echo "PM2 logovi:"
+            $PM2_PATH logs msk --lines 10 --nostream
+            exit 1
+          fi
+
+          echo "🎉 Health check prošao uspješno!"
